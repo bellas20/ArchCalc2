@@ -1,0 +1,14 @@
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\bin\Debug\ArchCalc.exe.config
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\bin\Debug\ArchCalc.exe
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\bin\Debug\ArchCalc.pdb
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\ArchCalc.csprojResolveAssemblyReference.cache
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\MainWindow.g.cs
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\App.g.cs
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\ArchCalc_MarkupCompile.cache
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\ArchCalc_MarkupCompile.lref
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\MainWindow.baml
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\ArchCalc.g.resources
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\ArchCalc.Properties.Resources.resources
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\ArchCalc.csproj.GenerateResource.Cache
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\ArchCalc.exe
+c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\ArchCalc.pdb
