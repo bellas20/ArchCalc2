@@ -27,7 +27,7 @@ namespace ArchCalc
             InitializeComponent();
             feetA.Focus();
             feetA.SelectAll();
-            //github testing
+            //github testing AB
         }
 
         private void BtnClickAdd(object sender, RoutedEventArgs e)
