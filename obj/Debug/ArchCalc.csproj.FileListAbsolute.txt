@@ -12,3 +12,19 @@ c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug
 c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\ArchCalc.csproj.GenerateResource.Cache
 c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\ArchCalc.exe
 c:\users\bella\documents\visual studio 2015\Projects\ArchCalc\ArchCalc\obj\Debug\ArchCalc.pdb
+C:\Users\bella\Documents\GitHub\ArchCalc2\bin\Debug\ArchCalc.exe.config
+C:\Users\bella\Documents\GitHub\ArchCalc2\bin\Debug\ArchCalc.exe
+C:\Users\bella\Documents\GitHub\ArchCalc2\bin\Debug\ArchCalc.pdb
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\ArchCalc.csproj.AssemblyReference.cache
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\ArchCalc.csproj.SuggestedBindingRedirects.cache
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\MainWindow.g.cs
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\App.g.cs
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\ArchCalc_MarkupCompile.cache
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\ArchCalc_MarkupCompile.lref
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\MainWindow.baml
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\ArchCalc.g.resources
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\ArchCalc.Properties.Resources.resources
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\ArchCalc.csproj.GenerateResource.cache
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\ArchCalc.csproj.CoreCompileInputs.cache
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\ArchCalc.exe
+C:\Users\bella\Documents\GitHub\ArchCalc2\obj\Debug\ArchCalc.pdb

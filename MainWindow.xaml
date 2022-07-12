@@ -7,55 +7,56 @@
         mc:Ignorable="d"
         Title="Architectural Calculator" Height="550" Width="725" BorderThickness="3" Background="#FFD2D7D2" BorderBrush="#FFA49797">
     <Grid Margin="0,8,-5,-15.2" HorizontalAlignment="Right" Width="715">
-        <TextBox x:Name="feetA" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Margin="94,81,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18"/>
-        <TextBox x:Name="inchA" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="30" Margin="193,81,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18"/>
-        <TextBox x:Name="numA" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="30" Margin="299,81,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18"/>
-        <TextBox x:Name="denomA" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="30" Margin="420,81,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18"/>
-        <TextBox x:Name="feetB" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="32" Margin="94,158,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18"/>
-        <TextBox x:Name="inchB" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="32" Margin="193,158,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18"/>
-        <TextBox x:Name="numB" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="32" Margin="299,158,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18"/>
-        <TextBox x:Name="denomB" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="32" Margin="420,158,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18"/>
-        <Button x:Name="addButton" Content="+" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="60,288,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="24" Click="BtnClickAdd" RenderTransformOrigin="0.785,1.87"/>
-        <Button x:Name="subtractButton" Content="-" HorizontalAlignment="Left" Margin="169,288,0,0" VerticalAlignment="Top" Width="40" Height="39" FontSize="24" Click="BtnClickSubtract"/>
-        <TextBox x:Name="multDiv" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Height="28" Margin="605,82,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18"/>
-        <Button x:Name="multButton" Content="X" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="555,158,0,0" VerticalAlignment="Top" Width="40" Height="39" FontSize="24" Click="BtnClickMult"/>
-        <Button x:Name="divButton" Content="/" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="640,157,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="24" Click="BtnClickDiv"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="86*"/>
+            <ColumnDefinition Width="34*"/>
+            <ColumnDefinition Width="595*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="feetA" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Height="30" Margin="8,81,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18" FontFamily="Verdana" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="inchA" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="30" Margin="73,81,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18" FontFamily="Verdana" Grid.Column="2"/>
+        <TextBox x:Name="numA" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="30" Margin="179,81,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18" FontFamily="Verdana" Grid.Column="2"/>
+        <TextBox x:Name="denomA" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="30" Margin="300,81,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18" FontFamily="Verdana" Grid.Column="2"/>
+        <TextBox x:Name="feetB" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="32" Margin="8,158,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18" FontFamily="Verdana" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="inchB" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="32" Margin="73,158,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18" FontFamily="Verdana" Grid.Column="2"/>
+        <TextBox x:Name="numB" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="32" Margin="179,158,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18" FontFamily="Verdana" Grid.Column="2"/>
+        <TextBox x:Name="denomB" HorizontalAlignment="Left" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"  Height="32" Margin="300,158,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18" FontFamily="Verdana" Grid.Column="2"/>
+        <Button x:Name="addButton" Content="+" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="60,288,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="24" Click="BtnClickAdd" RenderTransformOrigin="0.785,1.87" Grid.ColumnSpan="2"/>
+        <Button x:Name="subtractButton" Content="-" HorizontalAlignment="Left" Margin="49,288,0,0" VerticalAlignment="Top" Width="40" Height="39" FontSize="24" Click="BtnClickSubtract" Grid.Column="2"/>
+        <TextBox x:Name="multDiv" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Height="28" Margin="485,82,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="69" GotFocus="Textbox_GotFocus" FontSize="18" FontFamily="Verdana" Grid.Column="2"/>
+        <Button x:Name="multButton" Content="X" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="435,158,0,0" VerticalAlignment="Top" Width="40" Height="39" FontSize="24" Click="BtnClickMult" FontFamily="Verdana" Grid.Column="2"/>
+        <Button x:Name="divButton" Content="/" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="520,157,0,0" VerticalAlignment="Top" Width="40" Height="40" FontSize="24" Click="BtnClickDiv" FontFamily="Verdana" Grid.Column="2"/>
 
 
-        <Label x:Name="feetLabel" Content="FEET" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="41" Margin="92,33,0,0" VerticalAlignment="Top" Width="69" FontSize="18"/>
-        <Label x:Name="firstNumberLabel" Content="A" HorizontalAlignment="Left" Margin="44,69,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <Label x:Name="secondNumberLabel" Content="B" HorizontalAlignment="Left" Margin="44,148,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <Label x:Name="feetLabel" Content="FEET" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="41" Margin="6,33,0,0" VerticalAlignment="Top" Width="69" FontSize="18" FontFamily="Verdana" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Label x:Name="firstNumberLabel" Content="A" HorizontalAlignment="Left" Margin="44,78,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Verdana"/>
+        <Label x:Name="secondNumberLabel" Content="B" HorizontalAlignment="Left" Margin="43,154,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Verdana"/>
 
 
-        <Label x:Name="inchLabel" Content="INCHES" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="41" Margin="181,33,0,0" VerticalAlignment="Top" Width="80" FontSize="18"/>
-        <TextBox x:Name="answerFeetBox" HorizontalAlignment="Left" Height="39" Margin="289,313,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalContentAlignment ="Center" VerticalContentAlignment ="Center" Width="87" FontSize="18"/>
-        <TextBox x:Name="answerInchBox" HorizontalAlignment="Left" Height="39" Margin="403,313,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalContentAlignment ="Center" VerticalContentAlignment ="Center" Width="87" FontSize="18"/>
-        <Label x:Name="numLabel" Content="NUMERATOR" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="41" Margin="295,40,0,0" VerticalAlignment="Top" Width="81"/>
-        <Label x:Name="denomLabel" Content="DENOMINATOR" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="41" Margin="406,40,0,0" VerticalAlignment="Top" Width="104"/>
-        <Label x:Name="feetLabel_Copy" Content="FEET" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="296,286,0,0" VerticalAlignment="Top" Width="69"/>
-        <Label x:Name="inchLabel_Copy" Content="INCHES" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="410,286,0,0" VerticalAlignment="Top" Width="69"/>
-        <Label x:Name="archLabel" Content="ARCHITECTURAL UNITS" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="323,258,0,0" VerticalAlignment="Top" Width="134"/>
-        <TextBox x:Name="answerEngrBox" HorizontalAlignment="Left" Height="39" Margin="548,313,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalContentAlignment ="Center" VerticalContentAlignment ="Center" Width="87" FontSize="18"/>
-        <Label x:Name="inchLabel_Copy1" Content="INCHES" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="555,286,0,0" VerticalAlignment="Top" Width="69"/>
-        <Label x:Name="engrLabel" Content="ENGINEERING UNITS" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="524,258,0,0" VerticalAlignment="Top" Width="134"/>
+        <Label x:Name="inchLabel" Content="INCHES" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="41" Margin="61,33,0,0" VerticalAlignment="Top" Width="80" FontSize="18" FontFamily="Verdana" Grid.Column="2"/>
+        <TextBox x:Name="answerFeetBox" HorizontalAlignment="Left" Height="39" Margin="169,313,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalContentAlignment ="Center" VerticalContentAlignment ="Center" Width="87" FontSize="18" Grid.Column="2" FontFamily="Verdana"/>
+        <TextBox x:Name="answerInchBox" HorizontalAlignment="Left" Height="39" Margin="283,313,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalContentAlignment ="Center" VerticalContentAlignment ="Center" Width="87" FontSize="18" Grid.Column="2" FontFamily="Verdana"/>
+        <Label x:Name="numLabel" Content="NUMERATOR" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="41" Margin="175,40,0,0" VerticalAlignment="Top" Width="90" FontFamily="Verdana" Grid.Column="2"/>
+        <Label x:Name="denomLabel" Content="DENOMINATOR" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="41" Margin="286,40,0,0" VerticalAlignment="Top" Width="104" FontFamily="Verdana" Grid.Column="2"/>
+        <Label x:Name="feetLabel_Copy" Content="FEET" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="176,286,0,0" VerticalAlignment="Top" Width="69" Grid.Column="2" FontFamily="Verdana"/>
+        <Label x:Name="inchLabel_Copy" Content="INCHES" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="290,286,0,0" VerticalAlignment="Top" Width="69" Grid.Column="2" FontFamily="Verdana"/>
+        <Label x:Name="archLabel" Content="ARCHITECTURAL UNITS" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="190,258,0,0" VerticalAlignment="Top" Width="160" Grid.Column="2" FontFamily="Verdana"/>
+        <TextBox x:Name="answerEngrBox" HorizontalAlignment="Left" Height="39" Margin="428,313,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" HorizontalContentAlignment ="Center" VerticalContentAlignment ="Center" Width="87" FontSize="18" Grid.Column="2" FontFamily="Verdana"/>
+        <Label x:Name="inchLabel_Copy1" Content="INCHES" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="435,286,0,0" VerticalAlignment="Top" Width="69" Grid.Column="2" FontFamily="Verdana"/>
+        <Label x:Name="engrLabel" Content="ENGINEERING UNITS" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="395,258,0,0" VerticalAlignment="Top" Width="160" Grid.Column="2" FontFamily="Verdana"/>
 
-        <Label x:Name="multDivLabel" Content="MULTIPLIER OR&#xA;DIVISOR A* or A/" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="48" Margin="584,25,0,0" VerticalAlignment="Top" Width="110"/>
+        <Label x:Name="multDivLabel" Content="MULTIPLIER OR&#xA;DIVISOR A* or A/" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="48" Margin="464,25,0,0" VerticalAlignment="Top" Width="110" FontFamily="Verdana" Grid.Column="2"/>
 
-        <Button x:Name="moveAnswertoA" Content="Result to A" HorizontalAlignment="Left" Margin="323,399,0,0" VerticalAlignment="Top" Width="136" FontSize="24" Click="BtnClickMoveAnswertoA"/>
-        <Label x:Name="resultLabel" Content="RESULT" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="38" Margin="390,215,0,0" VerticalAlignment="Top" Width="134" FontSize="24"/>
-        <Border BorderBrush="#FF7C7373" BorderThickness="1" HorizontalAlignment="Left" Height="113" Margin="272,258,0,0" VerticalAlignment="Top" Width="386"/>
-        <Label x:Name="resultLabel_Copy" Content="A+B" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="38" Margin="44,243,0,0" VerticalAlignment="Top" Width="70" FontSize="24"/>
-        <Label x:Name="resultLabel_Copy1" Content="A-B" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="38" Margin="154,243,0,0" VerticalAlignment="Top" Width="70" FontSize="24"/>
-        <Label x:Name="firstNumberLabel_Copy" Content="C" HorizontalAlignment="Left" Margin="562,69,0,0" VerticalAlignment="Top" FontSize="24"/>
-        <Label x:Name="resultLabel_Copy2" Content="A x C" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="38" Margin="541,115,0,0" VerticalAlignment="Top" Width="70" FontSize="24"/>
-        <Label x:Name="resultLabel_Copy3" Content="A / C" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="38" Margin="624,117,0,0" VerticalAlignment="Top" Width="70" FontSize="24"/>
-        <Menu x:Name="menu" HorizontalAlignment="Left" Height="33" VerticalAlignment="Top" Width="348">
-            <MenuItem x:Name="helpMenu" Header="Help"/>
-            <MenuItem Header="option 1"/>
-            <MenuItem Header="option 2"/>
-        </Menu>
-
-
+        <Button x:Name="moveAnswertoA" Content="Result to A" HorizontalAlignment="Left" Margin="200,399,0,0" VerticalAlignment="Top" Width="135" FontSize="20" Click="BtnClickMoveAnswertoA" Grid.Column="2" FontFamily="Verdana"/>
+        <Label x:Name="resultLabel" Content="RESULT" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="38" Margin="290,215,0,0" VerticalAlignment="Top" Width="134" FontSize="24" FontFamily="Verdana" Grid.Column="2"/>
+        <Border BorderBrush="#FF7C7373" BorderThickness="1" HorizontalAlignment="Left" Height="113" Margin="152,258,0,0" VerticalAlignment="Top" Width="410" Grid.Column="2"/>
+        <Label x:Name="resultLabel_Copy" Content="A+B" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="38" Margin="44,250,0,0" VerticalAlignment="Top" Width="70" FontSize="20" Grid.ColumnSpan="2"/>
+        <Label x:Name="resultLabel_Copy1" Content="A-B" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="38" Margin="34,250,0,0" VerticalAlignment="Top" Width="70" FontSize="20" Grid.Column="2"/>
+        <Label x:Name="firstNumberLabel_Copy" Content="C" HorizontalAlignment="Left" Margin="445,78,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Verdana" Grid.Column="2"/>
+        <Label x:Name="resultLabel_Copy2" Content="A x C" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="38" Margin="415,120,0,0" VerticalAlignment="Top" Width="80" FontSize="20" FontFamily="Verdana" Grid.Column="2"/>
+        <Label x:Name="resultLabel_Copy3" Content="A / C" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="38" Margin="500,120,0,0" VerticalAlignment="Top" Width="80" FontSize="20" FontFamily="Verdana" Grid.Column="2"/>
+        <Label x:Name="firstNumberLabel_Copy1" Content="/" HorizontalAlignment="Left" Margin="265,76,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Verdana" Grid.Column="2"/>
+        <Label x:Name="firstNumberLabel_Copy2" Content="/" HorizontalAlignment="Left" Margin="265,154,0,0" VerticalAlignment="Top" FontSize="24" FontFamily="Verdana" Grid.Column="2"/>
+        <Button x:Name="moveAnswertoB" Content="Result to B" HorizontalAlignment="Left" Margin="200,456,0,0" VerticalAlignment="Top" Width="135" FontSize="20" Click="BtnClickMoveAnswertoB" Grid.Column="2" FontFamily="Verdana"/>
 
     </Grid>
 </Window>

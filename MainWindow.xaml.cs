@@ -169,6 +169,14 @@ namespace ArchCalc
             feetB.Focus();
         }
 
+        private void MoveAnswertoB()
+        {
+            feetB.Text = answerFeetBox.Text;
+            inchB.Text = answerInchBox.Text;
+            numB.Text = "0";
+            denomB.Text = "0";
+            feetA.Focus();
+        }
 
         private void Textbox_GotFocus(object sender, RoutedEventArgs e)
         {
@@ -180,6 +188,11 @@ namespace ArchCalc
         private void BtnClickMoveAnswertoA(object sender, RoutedEventArgs e)
         {
             MoveAnswertoA();
+        }
+
+        private void BtnClickMoveAnswertoB(object sender, RoutedEventArgs e)
+        {
+            MoveAnswertoB();
         }
     }
 }
